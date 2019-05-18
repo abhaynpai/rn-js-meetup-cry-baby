@@ -70,7 +70,7 @@ public class CryBabyModule extends ReactContextBaseJavaModule implements SensorE
 
     @ReactMethod
     public void stopListening() {
-        sensorManager.unregisterListener(this);
+        sensorManager.unregisterListener(this, accelerometerSensor);
     }
 
     @ReactMethod
